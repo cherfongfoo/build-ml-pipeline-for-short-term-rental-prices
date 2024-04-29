@@ -23,7 +23,7 @@ def go(args):
     ######################
     # YOUR CODE HERE     #
     ######################
-    local_path = run.use_artifact(args.input_artifact]).file()
+    local_path = run.use_artifact(args.input_artifact).file()
     df = pd.read_csv(local_path)
 
     # Filter results between the min_price and max_price
